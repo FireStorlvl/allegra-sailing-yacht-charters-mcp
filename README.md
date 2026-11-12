@@ -39,29 +39,28 @@ Cancel my Allegra booking.
 {
   "mcpServers": {
     "allegra-yacht-charters": {
-      "url": "https://api.allegra-yacht.com/mcp"
+      "url": "https://api.allegra-yacht.com/mcp/signed-in"
     }
   }
 }
 ```
 
-The plugin needs no API key and no settings.
+The plugin needs no API key and no settings. Cursor asks you to sign in when it connects.
 
 ## Sign-in
 
-- Browsing, open dates and quotes need no sign-in.
-- Booking needs a sign-in. When a booking tool runs, your assistant opens our sign-in page. You enter your name, email and phone, then the one-time code we email you. There are no passwords.
+- The plugin connects to `https://api.allegra-yacht.com/mcp/signed-in`, so Cursor asks you to sign in when it connects. Cursor opens our sign-in page in your browser. You enter your name, email and phone, then the one-time code we email you. There are no passwords.
 - Sign-in uses OAuth 2.1 with PKCE. Your assistant registers itself as a public client; there is no client secret.
 - An assistant's sign-in lasts 24 hours. Then you sign in again.
 - You must be 18 or older to book.
 
-If your assistant cannot sign in during a chat, use `https://api.allegra-yacht.com/mcp/signed-in` instead. It asks you to sign in when it connects.
+To browse without an account, an assistant that can sign in during a chat can use `https://api.allegra-yacht.com/mcp` instead. There, browsing, open dates and quotes need no sign-in, and a booking tool asks for one when it runs.
 
 ## Tools
 
-Ten tools only read and need no sign-in. Eleven act for the signed-in client. Every tool that books, pays, changes or cancels asks you first.
+Ten tools only read and need no sign-in. Eleven act for the signed-in client. Every tool that books, pays, changes or cancels asks you first. Through the plugin you are signed in, so every tool works. The last column shows which tools also work without sign-in at `https://api.allegra-yacht.com/mcp`.
 
-| Tool | What it does | Sign-in |
+| Tool | What it does | Sign-in at `/mcp` |
 |---|---|---|
 | `get_boat` | The boat | No |
 | `get_itinerary` | Home base, route and seasons | No |
