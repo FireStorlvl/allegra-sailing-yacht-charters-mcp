@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "allegra-yacht-charters": {
+      "url": "https://api.allegra-yacht.com/mcp"
+    }
+  }
+}
