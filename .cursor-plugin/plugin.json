@@ -1,0 +1,21 @@
+{
+  "name": "allegra-sailing-yacht-charters",
+  "version": "1.0.0",
+  "description": "Plan, price and book a private crewed catamaran charter in the British Virgin Islands: live open dates, exact quotes in US dollars and real bookings with the yacht's owner.",
+  "author": {
+    "name": "Allegra Sailing Yacht Charters",
+    "email": "info@allegra-yacht.com"
+  },
+  "homepage": "https://www.allegra-yacht.com",
+  "repository": "https://github.com/FireStorlvl/allegra-sailing-yacht-charters-mcp",
+  "license": "MIT",
+  "keywords": [
+    "yacht-charter",
+    "catamaran",
+    "british-virgin-islands",
+    "sailing",
+    "travel",
+    "booking"
+  ],
+  "logo": "assets/logo.png"
+}
